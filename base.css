@@ -1,0 +1,329 @@
+@media screen and (min-width:561px){
+
+body{
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: #13191b;
+}
+
+.m-button {
+  display: inline-block;
+  width: 162px;
+  height: 46px;
+  line-height: 48px;
+  font-size: 14px;
+  color: #13191b;
+  border: 1px solid #13191b;
+  text-align: center;
+  font-family: "Gill Sans Std Book", sans-serif;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.m-button:hover{
+  color: white;
+  background-color: black
+}
+
+/* ここからmain部分のCSS */
+
+.main{
+  background: url("img/main.jpg") center center;
+  width: 100%;
+  height: 800px;
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  padding: 20px 30px ;
+}
+
+.header-navgroup{
+  margin: 0 0 0 auto;
+}
+
+.header-navgroup >ul{
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.header-navgroup >ul >li{
+  margin: 0 0 0 30px;
+}
+
+.header-navgroup >ul >li >a{
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.header-item >a:hover{
+  padding-bottom: 5px;
+  border-bottom: solid white 5px;
+}
+
+.header-navgroup-btn{
+  display: none;
+}
+
+
+/* ここまでmain部分のCSS */
+
+/* ここからcopy部分のCSS */
+.copy{
+  background-color: #f6f6f6;
+  padding: 100px 0;
+}
+
+.copy-inner{
+  max-width: 400px;
+  margin: auto;
+}
+
+.copy-inner >h1{
+  text-align: center;
+}
+
+.sample::before{
+  content: "「 "
+}
+
+.sample::after{
+  content: " 」";
+  font-weight: bold;
+
+}
+
+.sample{
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ここまでcopy部分のCSS */
+
+/* ここからproduct部分のCSS */
+.product{
+  margin: 100px auto;
+  width: 80%;
+}
+
+.product-title{
+  display: flex;
+  margin: 50px 50px;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+  @media screen and (max-width:900px){
+    .product-title{
+      margin: 50px 0px;
+    }
+  }
+
+.product-title >h2{
+  font-size:35px;
+}
+
+.product-title >a{
+  margin-left: auto;
+}
+
+.product-lineup{
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.a-product{
+  margin: 0 10px;
+  text-align: center;
+}
+
+.a-product:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.a-product >img{
+  width: 200px;
+  border-radius: 0 20px 20px 5px ;
+  box-shadow: 5px 3px white, 7px 5px 6px #777;;
+}
+
+/* ここまでproduct部分のCSS */
+
+/* ここからnews部分のCSS */
+.news{
+  background-color: #f6f6f6;
+  padding: 100px 0;
+}
+
+.news-inner{
+  width: 80%;
+  margin:auto;
+}
+
+.news-title{
+  display: flex;
+  justify-content: flex-start;
+  margin: 50px 50px;
+  align-items: center;
+}
+
+.news-title >h2{
+  font-size:35px;
+}
+
+.news-title >a{
+  margin-left: auto;
+}
+
+.a-news{
+  display: flex;
+  margin: 50px 100px;
+}
+
+.a-news:hover{
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.a-news-right {
+  min-width: 350px;
+}
+
+.a-news-left >img{
+  width: 300px;
+  margin-right: 20px;
+  border-radius: 5%;
+}
+
+.a-news-right >h3{
+  margin-top: 0;
+}
+
+    @media screen and (max-width:900px){
+      .news-title{
+        margin: 50px 0px;
+      }
+
+      .a-news{
+        flex-wrap: wrap;
+        margin: 50px auto;
+      }
+
+      .a-news-left {
+        margin: auto;
+      }
+
+      .a-news-left >img{
+        width: 300px;
+        margin-left: 20px;
+      }
+
+      .a-news-right >h3{
+        margin-top: 0;
+        text-align: center;
+      }
+    }
+
+/* ここまでnews部分のCSS */
+
+/* ここからsns部分のCSS */
+.top-scroll{
+  background-color: white;
+  background-image: url(img/arrow.png);
+  margin: -25px auto 0 auto;
+  width:50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: contain;
+  transition: 0.5s;
+}
+
+.top-scroll:hover{
+  transform: translateY(-5px);
+}
+
+.sns-inner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+.sns-bnr{
+  margin: 30px 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+  @media screen and (max-width:900px){
+    .sns-bnr{
+      margin: 30px 5px;
+    }
+  }
+
+#facebook{
+  color: #4871a9;
+  border: 0.5px solid #4871a9;
+}
+
+#twitter{
+  color: #70bdd3;
+  border: 0.5px solid #70bdd3;
+}
+
+#hatena{
+  color: #2f9bcd;
+  border: 0.5px solid #2f9bcd;
+}
+
+#line{
+  color: #8ec09d;
+  border: 0.5px solid #8ec09d;
+  display: none;
+}
+
+/* ここまでsns部分のCSS */
+
+/* ここからnav部分のCSS */
+.nav{
+  background-color: #939899
+}
+
+.nav-inner{
+  display: flex;
+  justify-content: space-around;
+  margin: 0 50px;
+  padding: 10px 0;
+}
+
+.nav-group{
+  display: flex;
+  margin: auto;
+  list-style: none;
+  padding-left: 0;
+}
+
+.nav-group >li >a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  color: white;
+}
+
+.copyright{
+  color: white;
+  text-align:right;
+  padding: 10px 20px;
+}
+/* ここまでnav部分のCSS */
